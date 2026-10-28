@@ -26,15 +26,13 @@ export default function Nav(){
                 <div className="botones">
                     <div className="busqueda">
                         <input type="text" placeholder="Buscar juego..." />
-                        <span className="material-symbols-outlined">search</span>
                     </div>
 
                     <button className="boton-icono" aria-label="Carrito">
-                        <span className="material-symbols-outlined">shopping_cart</span>
                     </button>
 
                     <button className="boton-icono" aria-label="Perfil">
-                        <span className="material-symbols-outlined">person</span>
+
                     </button>
                 </div>
             </nav>
