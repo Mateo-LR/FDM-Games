@@ -1,5 +1,9 @@
 import "../styles/Home.css"
 import IMG from "../assets/img-banner2.webp"
+import terror from "../assets/iconos/icono-terror.svg"
+import survival from "../assets/iconos/icono-survival.svg"
+import shooter from "../assets/iconos/icono-shooter.svg"
+import sandbox from "../assets/iconos/icono-sandbox.svg"
 import { Link } from "wouter"
 
 export default function Home(){
@@ -22,18 +26,50 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="cat-dest">
-                    <div className="linea-dec">
+                    <div className="titulo">
+                        <div className="linea-dec">
+                        </div>
+                        <h2>Categorías destacadas</h2>
+                        <div className="linea-dec"> 
+                        </div>
                     </div>
-                    <h2>Categorías destacadas</h2>
-                    <div className="linea-dec"> 
+                    
+                    <div className="cont-cat">
+                        <div className="categoria">
+                            <Link href="/catalogo" className="icono-cat">
+                                <img src={terror} alt="Terror" />
+                            </Link>
+                            <h3>Terror</h3>
+                        </div>
+                        <div className="categoria">
+                            <Link href="/catalogo" className="icono-cat">
+                                <img src={survival} alt="Survival" />
+                            </Link>
+                            <h3>Survival</h3>
+                        </div>
+                        <div className="categoria">
+                            <Link href="/catalogo" className="icono-cat">
+                                <img src={shooter} alt="Shooter" />
+                            </Link>
+                            <h3>Shooter</h3>
+                        </div>
+                        <div className="categoria">
+                            <Link href="/catalogo" className="icono-cat">
+                                <img src={sandbox} alt="Sandbox" />
+                            </Link>
+                            <h3>Sandbox</h3>
+                        </div>
                     </div>
                 </div>
                 <div className="juegos-dest">
-                    <div className="linea-dec">
+                    <div className="titulo">
+                        <div className="linea-dec">
+                        </div>
+                        <h2>Juegos destacados</h2>
+                        <div className="linea-dec">
+                        </div>
                     </div>
-                    <h2>Juegos destacados</h2>
-                    <div className="linea-dec">
-                    </div>
+                    
                 </div>
             </body>
             

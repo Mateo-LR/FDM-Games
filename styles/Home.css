@@ -1,3 +1,11 @@
+body{
+    background-image: url("../assets/fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .banner {
     position: relative; 
     width: 100%;
@@ -5,8 +13,6 @@
     margin-top: 4vh;
     overflow: hidden;
 }
-
-
 .banner img {
     width: 100%;
     height: 100%;
@@ -59,7 +65,9 @@
 .btn-ver-mas:hover{
     background-color: #E93434;
 }
-.cat-dest{
+
+.titulo{
+    color: white;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
@@ -68,13 +76,86 @@
 .linea-dec{
     margin-right: 10px;
     margin-left: 10px;
-    background-color: black;
+    background-color: white;
     width: 50vh;
-    height: 5px;
+    height: 2px;
 }
 .juegos-dest{
+    color: white;
     margin-top: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.cont-cat {
+    /* Si utilizas la imagen de fondo: */
+    background-image: url("../assets/fondo4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Si deseas generar las líneas rojas directo en CSS sin imagen: */
+    /* background: repeating-linear-gradient(120deg, #500000, #500000 12px, #000 12px, #000 24px); */
+
+    color: white;
+    margin: 4vh auto;
+    width: 80%; /* Ajusta el ancho según tu layout */
+    padding: 3rem 2rem;
+    border-radius: 20px; /* Bordes redondeados de la tarjeta principal */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Tarjeta de Categória Individual */
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Esfera con Degradado Radial */
+.icono-cat {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* Degradado radial centrado: claro al centro y oscuro a los bordes */
+    background: radial-gradient(circle at center, #383838 0%, #151515 70%, #0a0a0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde suave */
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(0, 0, 0, 0.6);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icono-cat:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1), 0 12px 25px rgba(139, 0, 0, 0.4);
+}
+
+/* Imagen de Icono */
+.icono-cat img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+}
+
+/* Títulos debajo del Icono */
+.categoria h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
 }

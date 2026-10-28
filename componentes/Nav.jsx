@@ -28,12 +28,8 @@ export default function Nav(){
                         <input type="text" placeholder="Buscar juego..." />
                     </div>
 
-                    <button className="boton-icono" aria-label="Carrito">
-                    </button>
-
-                    <button className="boton-icono" aria-label="Perfil">
-
-                    </button>
+                    <Link href="/registro" className="boton-icono">Registrarse</Link>
+                    <Link href="/login" className="boton-icono">Login</Link>
                 </div>
             </nav>
         </>
